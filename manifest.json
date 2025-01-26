@@ -2,10 +2,12 @@
     "manifest_version": 3,
     "name": "GPT Response Jump",
     "version": "1.0",
-    "description": "Navigate to specific GPT response by inputting a number.",
+    "description": "Navigate to specific GPT response by specifying a number.",
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage",
+        "tabs"
     ],
     "background": {
         "service_worker": "background.js"
@@ -21,7 +23,7 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "https://chatgpt.com/c/*"
             ],
             "js": [
                 "content.js"

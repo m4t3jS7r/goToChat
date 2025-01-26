@@ -9,15 +9,8 @@
         }
 
         .container {
-            display: flex;
-            align-items: center; /* Aligns items vertically centered */
+            display: flow;
         }
-
-        input[type="number"] {
-            width: 70%; /* Takes up 70% of the container width */
-            margin-right: 10px; /* Adds space between the input and button */
-        }
-
         button {
             width: 30%; /* Takes up 30% of the container width */
         }
@@ -27,8 +20,11 @@
 <body>
     <h3 style="text-align: center;">Jump to GPT Response</h3>
     <div class="container">
-        <input id="responseNumber" type="number" placeholder="Enter number" />
-        <button id="jumpBtn">Jump</button>
+        <p>Enable performace mode for longer conversations (hides HTML content)</p>
+        <p style="text-align: -webkit-center;">Performance mode: <span id="perf_mode_el" style="color: blue">OFF</span></p>
+        <div style="text-align: right;">
+            <button id="enDisPerfMode">Enable</button>
+        </div>
     </div>
 
     <script src="popup.js"></script>

@@ -1,2 +1,0 @@
-multiple chat support
--> add text input next to chat (jump to response)
